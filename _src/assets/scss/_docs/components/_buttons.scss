@@ -10,7 +10,7 @@
   line-height: 1;
   padding: .5rem .75rem;
   background-color: var(--color-background-interactive, #{$color-background-interactive});
-  color: var(--color-text-inverse, #{$color-text-inverse});
+  color: var(--color-text-body, #{$color-text-body});
   font-weight: 500;
   cursor: pointer;
   &:hover,
