@@ -5,7 +5,7 @@ permalink: /theming/
 hasBreadcrumbs: true
 eleventyNavigation:
   key: Theming
-  order: 7
+  order: 6
 ---
 
 {% import 'macros/code.njk' as code %}
