@@ -1,0 +1,70 @@
+@use '../abstracts/tokens' as *;
+
+[class*="lwj-heading"] {
+  color: var(--color-text-strong, #{$color-text-strong});
+}
+
+.lwj-heading-1 {
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  letter-spacing: calc(#{$font-size-1} * -.03);
+  font-weight: $font-weight-bold;
+}
+
+.lwj-heading-2 {
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  letter-spacing: calc(#{$font-size-2} * -.01);
+  font-weight: $font-weight-medium;
+}
+
+.lwj-heading-3 {
+  font-size: $font-size-3;
+  line-height: $line-height-3;
+}
+
+.lwj-heading-4 {
+  font-size: $font-size-4;
+  line-height: $line-height-4;
+  letter-spacing: calc(#{$font-size-4} * -.01);
+  font-weight: $font-weight-medium;
+}
+
+.lwj-text-body-md {
+  font-size: $font-size-4;
+  line-height: $line-height-4;
+}
+
+.lwj-text-body-sm {
+  font-size: $font-size-5;
+  line-height: $line-height-5;
+}
+
+[class*="lwj-text-eyebrow"] {
+  color: var(--color-text-strong, #{$color-text-strong});
+  font-weight: $font-weight-medium;
+  letter-spacing: calc(#{$font-size-4} * .1);
+}
+
+.lwj-text-eyebrow-lg {
+  font-size: $font-size-4;
+  line-height: $line-height-4;
+  text-transform: uppercase;
+}
+
+.lwj-text-eyebrow-sm {
+  font-size: $font-size-5;
+  line-height: $line-height-5;
+  text-transform: lowercase;
+}
+
+.lwj-text-center {
+  text-align: center;
+}
+
+.lwj-columns {
+  --columns: 2;
+  --gap: #{$spacing-xl};
+  columns: var(--columns);
+  column-gap: var(--gap);
+}

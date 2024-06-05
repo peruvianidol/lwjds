@@ -1,0 +1,7 @@
+@use '../abstracts/tokens' as *;
+
+:where(*) {
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+}

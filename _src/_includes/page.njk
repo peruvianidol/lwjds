@@ -1,0 +1,52 @@
+---
+layout: base.njk
+classes: doc-layout-primary
+---
+
+<header class="doc-space-between" data-grid-area="header">
+  <a href="/" class="doc-text-inherit">
+    <img src="/assets/images/learn-with-jason.svg">
+  </a>
+  <button class="doc-button-primary" onclick="toggleMenu()">
+    <span>Menu</span>
+    <svg class="doc-icon">
+      <use xlink:href="#menu"></use>
+    </svg>
+    <svg class="doc-icon">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+</header>
+<nav data-grid-area="nav">
+  {% include "partials/nav-menu.njk" %}
+</nav>
+<main data-grid-area="main">
+  <article class="doc-layout-sidebar-right">
+    <div data-grid-area="title">
+      {% if eleventyNavigation.parent %}
+        <ul class="doc-breadcrumbs doc-stack" role="list">
+          <li><a href="/">Home</a></li>
+          <li>{{ eleventyNavigation.parent }}</li>
+          <li>{{ title }}</li>
+        </ul>
+      {% elseif hasBreadcrumbs %}
+        <ul class="doc-breadcrumbs doc-stack" role="list">
+          <li><a href="/">Home</a></li>
+          <li>{{ title }}</li>
+        </ul>
+      {% endif %}
+      <h1 class="doc-heading-1 doc-stack">{% if page.url === "/" %}{{ site.name }} {% endif %}{{ title }}</h1>
+    </div>
+    <aside data-grid-area="toc">
+      {% if content | toc %}
+        <div class="doc-sticky doc-stack">
+          <p><strong>On this page</strong></p>
+          {{ content | toc | safe }}
+        </div>
+      {% endif %}
+    </aside>
+    <section class="doc-flow" data-grid-area="content">
+      {{ content | safe }}
+    </section>
+  </article>
+</main>

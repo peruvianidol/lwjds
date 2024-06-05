@@ -1,0 +1,71 @@
+$white: #FAF9FD;
+$black: #0E032A;
+$indigo: #3B1B89;
+$purple-200: #AE45FE;
+$purple-400: #9B20F9;
+$yellow: #EDE767;
+
+$gray-100: #E9E7ED;
+$gray-150: #CFC9DB;
+$gray-175: #9E97B5;
+$gray-200: #9A91B1;
+$gray-300: #78757f;
+$gray-400: #615384;
+$gray-700: #443960;
+
+$green: #1FD27C;
+$orange: #DE8E73;
+$blue: #3D8DDF;
+
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 60px;
+
+$font-weight-book: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600; 
+
+$font-size-1: 2.25rem;
+$font-size-2: 1.125rem;
+$font-size-3: 1rem;
+$font-size-4: .875rem;
+$font-size-5: .75rem;
+
+$line-height-1: 40px;
+$line-height-2: 24px;
+$line-height-3: 24px;
+$line-height-4: 20px;
+$line-height-5: 16px;
+
+$font-family-body: 'jwf', sans-serif;
+
+$color-text-body: $gray-150;
+$color-text-interactive: $purple-200;
+$color-text-inverse: $black;
+$color-text-subdued: $gray-175;
+$color-text-subdued-inverse: $gray-400;
+$color-text-strong: $white;
+
+$shadow-text-overlay: 1px 1px 2px rgb(14 3 42 / .5);
+
+$color-background-body: $black;
+$color-background-interactive: $gray-100;
+$color-background-brand: $indigo;
+$color-background-overlay-dark: rgb(0 6 59 / .6);
+$color-background-overlay-light: rgb(68 57 96 / .6);
+
+$color-border-overlay: rgb(255 255 255 / .15);
+$border-width-sm: 1px;
+
+$radius-sm: 4px;
+$radius-round: 2rem;
+
+$button-radius: $radius-sm;
+$color-button-text: $color-text-inverse;
+$color-button-primary-background: $color-background-interactive;
+
+$color-background-accent: $gray-100;
+$color-border: $gray-150;
+$breakpoint-md: 768px;

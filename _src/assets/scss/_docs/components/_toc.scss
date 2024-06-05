@@ -1,0 +1,49 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-toc {
+  container: toc / inline-size;
+  margin-block-end: 2rem;
+  ol {
+    list-style: none;
+    padding-inline-start: 0;
+    font-size: .875rem;
+    li {
+      margin-block-end: 4px;
+    }
+    ol {
+      margin-block-start: 4px;
+    }
+    a {
+      color: var(--color-text-subdued, #{$color-text-subdued});
+      text-decoration: none;
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
+      & + * {
+        margin-inline-start: 1rem;
+      }
+    }
+  }
+}
+
+@container toc (min-width: 300px) {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+      white-space: nowrap;
+    }
+    > :not(:last-child) {
+      margin-right: .5rem;
+      &:after {
+        content: "|";
+        padding-left: .5rem;
+        color: #DCDFE4;
+      }
+    }
+  }
+  li ol {
+    display: none;
+  }
+}

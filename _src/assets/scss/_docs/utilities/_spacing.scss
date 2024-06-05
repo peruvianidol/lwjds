@@ -1,0 +1,18 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-flow {
+  --flow-size: 1.5rem;
+  > :not(:last-child) {
+    margin-block-end: var(--flow-size);
+  }
+}
+
+.doc-stack {
+  --stack-size: 1.5rem;
+  margin-block-end: var(--stack-size);
+}
+
+.doc-inset-square {
+  --inset-size: 1rem;
+  padding: var(--inset-size);
+}

@@ -1,0 +1,26 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-flex {
+  --flex-align: center;
+  --flex-gap: .5rem;
+  --flex-justify: flex-start;
+  --flex-wrap: nowrap;
+  display: flex;
+  align-items: var(--flex-align);
+  justify-content: var(--flex-justify);
+  gap: var(--flex-gap);
+  flex-wrap: var(--flex-wrap);
+}
+
+.doc-space-between {
+  --flex-align: center;
+  --flex-gap: .5rem;
+  display: flex;
+  align-items: var(--flex-align);
+  justify-content: space-between;
+  gap: var(--flex-gap);
+}
+
+.doc-flex-item {
+  flex: 1;
+}

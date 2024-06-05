@@ -1,0 +1,22 @@
+@use '../abstracts/tokens' as *;
+
+.lwj-flex,
+.lwj-space-between {
+  --flex-align: center;
+  --flex-gap: 10px;
+  --flex-justify: flex-start;
+  --flex-wrap: nowrap;
+  display: flex;
+  align-items: var(--flex-align);
+  gap: var(--flex-gap);
+  justify-content: var(--flex-justify);
+  flex-wrap: var(--flex-wrap);
+}
+
+.lwj-space-between {
+  --flex-justify: space-between;
+}
+
+.lwj-flex-item {
+  flex: 1;
+}

@@ -1,0 +1,42 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-example-stack,
+.doc-example-inline,
+[class*="doc-example-inset"] {
+  border: 2px solid #DCDFE4;
+  height: 4rem;
+  border-radius: 2px;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+}
+
+.doc-example-inline:after {
+  --inline: 1.5rem;
+  width: var(--inline);
+  height: calc(100% + 4px);
+  background-color: #FAECCC;
+  left: calc(100% + 2px);
+  top: -2px;
+}
+
+.doc-example-stack:after {
+  --stack: 1.5rem;
+  height: var(--stack);
+  width: calc(100% + 4px);
+  background-color: #FAECCC;
+  top: calc(100% + 2px);
+  left: -2px;
+}
+
+[class*="doc-example-inset"] {
+  --inset: 16px;
+  background-color: #DEFBE6;
+  &:after {
+    inset: var(--inset);
+    background-color: #FFFFFF;
+  }
+}

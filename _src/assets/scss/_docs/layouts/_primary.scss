@@ -1,0 +1,104 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-layout-primary {
+  overflow-y: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  > [data-grid-area="main"],
+  > [data-grid-area="nav"] {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+  }
+  > [data-grid-area="header"],
+  > [data-grid-area="nav"] {
+    background-color: var(--color-background-brand, #{$color-background-brand});
+    color: var(--color-text-inverse, #{$color-text-inverse});
+    padding: 1rem;
+  }
+  > [data-grid-area="header"] {
+    grid-row: 1 / 2;
+    padding: .75rem 1rem;
+    button svg:last-of-type {
+      display: none;
+    }
+    img {
+      max-height: 40px;
+    }
+  }
+  > [data-grid-area="nav"] {
+    display: none;
+    z-index: 10;
+    padding: 1.25rem;
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-gutter: stable;
+    scrollbar-color: rgb(255 255 255 /.25) transparent;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+      width: .5rem;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      padding: .25rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgb(255 255 255 / .25);
+      border-radius: .5rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(255 255 255 / .5);
+    }
+  }
+  > [data-grid-area="main"] {
+    padding: 1rem;
+  }
+}
+
+[data-menu] {
+  > [data-grid-area="nav"] {
+    display: block;
+  }
+  > [data-grid-area="header"] {
+    button svg:first-of-type {
+      display: none;
+    }
+    button svg:last-of-type {
+      display: block;
+    }
+  }
+}
+
+@media (width >= $breakpoint-md) {
+  .doc-layout-primary {
+    grid-template-columns: 260px 1fr;
+    > [data-grid-area="main"] {
+      grid-row: 1 / 3;
+      grid-column: 2 / 3;
+    }
+    > [data-grid-area="header"],
+    > [data-grid-area="nav"] {
+      padding: 1.5rem;
+    }
+    > [data-grid-area="header"] {
+      button {
+        display: none;
+      }
+      img {
+        max-height: none;
+        max-width: 100%;
+        margin-inline: auto;
+      }
+    }
+    > [data-grid-area="nav"] {
+      display: block;
+      grid-column: 1 / 2;
+    }
+    > [data-grid-area="main"] {
+      padding: 3rem;
+    }
+  }
+}

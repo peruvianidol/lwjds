@@ -1,0 +1,7 @@
+@use '../../abstracts/tokens' as *;
+
+[class*="doc-icon"] {
+  width: 1rem;
+  aspect-ratio: 1;
+  fill: currentColor;
+}

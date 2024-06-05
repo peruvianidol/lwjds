@@ -1,0 +1,41 @@
+@use '../../abstracts/tokens' as *;
+
+[class*="doc-heading"],
+article :where(h1, h2, h3, h4) {
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-text-strong, #{$color-text-strong});
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
+
+.doc-heading-1,
+article h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.doc-heading-2,
+article h2 {
+  font-size: 2rem;
+}
+
+.doc-heading-3,
+article h3 {
+  font-size: 1.5rem;
+}
+
+.doc-heading-4,
+article h4 {
+  font-size: 1.25rem;
+}
+
+strong {
+  color: var(--color-text-strong, #{$color-text-strong});
+}

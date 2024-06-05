@@ -1,0 +1,14 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-table {
+  font-size: .875rem;
+  border-spacing: 0;
+  th {
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #6E7784;
+  }
+  th, td {
+    padding: .25rem .5rem;
+  }
+}

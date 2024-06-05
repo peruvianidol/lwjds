@@ -1,0 +1,16 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-breadcrumbs {
+  font-size: .75rem;
+  line-height: 1.333333;
+  letter-spacing: .0375rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  li:not(:last-child):after {
+    content: "/";
+    color: #6E7784;
+    margin-inline-start: .5rem;
+  }
+}

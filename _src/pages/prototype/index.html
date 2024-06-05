@@ -1,0 +1,356 @@
+---
+permalink: /prototype/
+eleventyNavigation:
+  key: Prototype
+  order: 7
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn with Jason</title>
+    <link rel="stylesheet" href="/assets/css/lwj.css">
+  </head>
+  <body class="lwj-layout-series">
+    {% include '../../assets/sprite.svg' %}
+
+    <div data-grid-area="logo">
+      <a href=""><img src="/assets/images/learn-with-jason.svg" height="78" alt="Learn with Jason"></a>
+    </div>
+
+    <nav class="lwj-flow" data-grid-area="nav">
+      <a href="" class="lwj-text-eyebrow-sm lwj-nav-bar-sm" style="--flex-justify: flex-end">
+        <span>Manage your profile</span>
+        <img class="lwj-avatar-sm" src="/assets/images/jason.jpg" alt="LWJ Original">
+      </a>
+      <ul role="list" class="lwj-text-eyebrow-lg lwj-nav-bar" style="--flex-justify: flex-end">
+        <li><a href="">Watch</a></li>
+        <li><a href="">Schedule</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Newsletter</a></li>
+        <li><a href="">Partners</a></li>
+        <li><a href="">Search (&#8984;K)</a></li>
+      </ul>
+    </nav>
+
+    <div data-grid-area="hero" style="--image: url('/assets/images/jason-hero.jpg')"></div>
+
+    <div class="lwj-stack-xl" data-grid-area="promo">
+      <div class="lwj-flow-md lwj-stack-md" style="max-width: 380px">
+        <img src="/assets/images/lwj-original.svg" height="30">
+        <h1 class="lwj-heading-1">#DoItAnyways</h1>
+        <p class="lwj-text-body-sm">The only way to get better at a thing is to do the thing. Join Jason in his daily deliberate practice to improve his filmmaking. There are always reasons not to start — if we want to be great, we have to #DoItAnyways.</p>
+      </div>
+      <div class="lwj-space-between">
+        <button class="lwj-button-primary">Start watching</button>
+        <div>
+          <p class="lwj-text-body-sm lwj-text-subdued lwj-stack-xs">Presented by:</p>
+          <ul role="list" class="lwj-flex" style="--flex-gap: 20px">
+            <li><a href="" class="lwj-text-inherit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.9 20" height="20"><path d="m56.5 12.9-6.7-8.7h-1.7v11.6h1.7V6.9l6.9 8.9h1.5V4.2h-1.7v8.7zm-16.9-2.2h6V9.2h-6V5.7h6.8V4.2h-8.5v11.6h8.6v-1.5h-6.9v-3.6zm-7.1-1.5c-2.3-.6-3-1-3-2.1 0-1 .9-1.6 2.1-1.6 1.2 0 2.3.4 3.2 1.2l.9-1.3c-1.1-.9-2.5-1.4-4-1.4-2.3 0-3.9 1.4-3.9 3.3 0 2.1 1.4 2.8 3.9 3.4 2.2.5 2.9 1 2.9 2s-.9 1.7-2.3 1.7-2.7-.5-3.8-1.5l-1 1.2c1.3 1.1 3 1.8 4.7 1.8 2.5 0 4.1-1.3 4.1-3.4-.1-1.7-1.1-2.6-3.8-3.3zm56.4-5-3.5 5.5L82 4.2h-2l4.6 7v4.6h1.8v-4.6l4.6-7h-2.1zM59.6 5.8h3.8v10h1.8v-10H69V4.2h-9.4v1.6zM77 11.3c1.8-.5 2.7-1.7 2.7-3.5 0-2.2-1.6-3.6-4.3-3.6h-5.2v11.6H72v-4.2h2.9l2.9 4.2h2l-3.2-4.5h.4zm-5-1.2V5.7h3.3c1.7 0 2.7.8 2.7 2.2 0 1.4-1.1 2.2-2.7 2.2H72zM13.2 1c-.6-1-1.9-1.3-2.9-.7-.3.2-.6.4-.8.7l-3 5.1c4.6 2.3 7.7 6.9 8.1 12.1h-2.1c-.4-4.4-3-8.4-7-10.3l-2.8 4.8c2.3 1 3.8 3.1 4.2 5.5H2.1c-.2 0-.3-.2-.3-.4v-.1l1.3-2.3c-.5-.4-1-.7-1.5-.9L.3 16.8c-.6 1-.2 2.3.7 2.8.3.2.7.3 1 .3h6.6c.2-3.1-1.1-6.1-3.6-7.9l1.1-1.8c3.2 2.2 5 5.8 4.7 9.7h5.6c.3-5.8-2.6-11.3-7.4-14.5l2-3.5c.1-.2.3-.2.5-.1s9.2 15.8 9.4 16c.1.2 0 .4-.1.5H18.4V20h2.2c1.2 0 2.1-.9 2.1-2.1 0-.4-.1-.7-.3-1L13.2 1z"/></svg></a></li>
+            <li><a href="" class="lwj-text-inherit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 24" height="20"><path d="M6 15.5V18l-6-6 1.3-1.3L6 15.5zM8.5 18H6l6 6 1.3-1.3L8.5 18zm14.2-4.8L24 12 12 0l-1.2 1.3L15.5 6h-2.9L9.3 2.7 8.1 3.9l2 2.1H8.7v9.3H18v-1.4l2.1 2.1 1.3-1.2-3.4-3.4V8.5l4.7 4.7zM6.6 5.4 5.4 6.6 6.7 8 8 6.7 6.6 5.4zM17.3 16 16 17.3l1.3 1.3 1.3-1.3-1.3-1.3zM3.9 8.1 2.7 9.3 6 12.6v-2.5l-2.1-2zm10 9.9h-2.5l3.3 3.3L16 20l-2.1-2zM91 18c-.8 0-1.4-.2-1.9-.7-.5-.4-.7-1-.7-1.8v-4.8H87V8.9h1.5l.3-2.4h1.7v2.4h2.2v1.8h-2.2v4.5c0 .2.1.5.3.7.2.2.4.3.7.3h1.3V18H91zm-8.7.1c-1.1 0-1.9-.3-2.6-.8-.7-.5-1.1-1.2-1.3-2h2.1c.1.3.3.6.6.7.3.2.7.3 1.1.3 1.1 0 1.7-.3 1.7-.9 0-.3-.2-.5-.5-.7-.4-.2-.9-.3-1.3-.4-.5-.1-1-.2-1.5-.4s-1-.5-1.3-.9c-.4-.4-.5-1-.5-1.7s.3-1.4.9-1.9c.6-.5 1.4-.8 2.5-.8s1.9.2 2.6.7c.6.5 1.1 1.2 1.2 1.9h-2.1c-.2-.6-.8-.9-1.6-.9-.9 0-1.4.3-1.4.9 0 .3.2.5.4.6.3.2.6.3 1 .3.4.1.8.2 1.3.3.4.1.8.3 1.3.5.4.2.7.5 1 .8.3.4.4.9.4 1.5 0 .8-.3 1.5-1 2-.9.7-1.8.9-3 .9m-6.4-8.5c-.7-.6-1.6-.9-2.8-.9-1 0-1.7.3-2.4.8-.6.5-1.1 1.2-1.3 2h2c.1-.3.3-.6.6-.7.3-.2.7-.3 1.1-.3.5 0 .9.1 1.3.4.3.3.5.7.5 1.2v.4h-2.3c-1.1 0-1.9.3-2.5.8-.6.5-.9 1.2-.9 2s.3 1.5.8 2c.6.5 1.3.8 2.2.8.6 0 1.1-.1 1.7-.4.4-.2.8-.5 1-.9h.1l.2 1.1h1.7V12c0-.9-.4-1.8-1-2.4m-1 4.9c0 .5-.2 1.1-.6 1.4-.4.4-.9.5-1.6.5-.5 0-.9-.1-1.1-.3-.3-.2-.4-.5-.4-.9 0-.8.5-1.2 1.6-1.2H75v.5zM64 18.2c-1.3 0-2.3-.4-3.1-1.3-.8-.8-1.2-2-1.2-3.5s.4-2.6 1.2-3.5c.8-.8 1.8-1.3 3.1-1.2 1.1 0 1.9.3 2.6.8.7.5 1.2 1.3 1.4 2.1h-2c-.4-.8-1.2-1.2-2.1-1.2-.6 0-1.3.3-1.7.8-.4.5-.6 1.2-.6 2.1 0 .9.2 1.6.6 2.2.4.5 1 .8 1.7.8.9 0 1.7-.4 2.1-1.2h2c-.2.8-.7 1.6-1.4 2.2-.6.6-1.5.9-2.6.9m-11.6 3.2 1.4-3.4-3.7-9.1h2.1l2.5 6.4h.1l2.5-6.4h2.1l-5 12.5h-2zM48.3 9.6c-.7-.6-1.6-.9-2.8-.9-.9 0-1.7.3-2.4.8-.6.5-1.1 1.2-1.3 2h2c.1-.3.3-.6.6-.7.3-.2.7-.3 1.1-.3.6 0 1 .1 1.3.4.3.3.5.7.5 1.2v.4H45c-1.1 0-1.9.3-2.5.8-.6.5-.9 1.2-.9 2s.3 1.5.8 2c.6.5 1.3.8 2.2.8.6 0 1.1-.1 1.7-.4.4-.2.8-.5 1-.9h.1l.2 1.1h1.7V12c0-1-.4-1.8-1-2.4m-1 4.9c0 .5-.2 1.1-.6 1.4-.4.4-.9.5-1.6.5-.5 0-.9-.1-1.2-.3-.3-.2-.4-.5-.4-.9 0-.8.5-1.2 1.5-1.2h2.2v.5zm-10.1-1 .9-.3.9-.6c.3-.3.6-.7.8-1.1.2-.5.3-1 .3-1.6 0-1.1-.4-2.1-1.1-2.7-.7-.7-1.7-1-2.8-1h-5v12h2.1v-4.5h1.6l3.1 4.5h2.4l-3.2-4.7zm-4-1.9V7.9h2.7c.6 0 1.1.2 1.4.5.4.3.5.8.5 1.4 0 .6-.2 1.1-.5 1.4-.4.3-.9.5-1.4.5h-2.7z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main data-grid-area="main" class="lwj-flow-xl">
+      <div>
+        <h2 class="lwj-heading-3 lwj-stack-md">Participate and win prizes!</h2>
+        <div class="lwj-flex" style="--flex-gap: 20px; --flex-align: flex-start">
+          <img src="/assets/images/win-a-macbook.png" width="280" alt="Win a MacBook Air! Presented by Datastax">
+          <div class="lwj-flow lwj-text-body-sm" style="max-width: 500px">
+            <h3 class="lwj-heading-2">Build an app by April 14 for a chance to win a MacBook Air</h3>
+            <p>LWJ is teaming up with DataStax to challenge developers everywhere to join in on the fun! Build your own app based on the next episode’s prompt and submit before April 14 for a chance to win a brand new MacBook Air. We’ll also highlight our favorite apps in the episode!</p>
+            <p><a href="">Read the rules and get started ></a></p>  
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="lwj-heading-3 lwj-stack-md">Season 1 <span class="lwj-text-subdued">Release year: 2024</span></h2>
+
+        <div class="lwj-grid" style="--grid-col-min: 165px; --gap: 40px">
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail2.png" alt="Jason on the couch">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E9</strong> <span class="lwj-text-subdued">Mar 21, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                Deliberate practice
+              </h3>
+              <p>The only way to get better at a thing is to keep doing the thing.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/images/thumbnail1.png" alt="Jason in the kitchen">
+            <figcaption class="lwj-flow lwj-text-body-sm" style="--flow-size: 5px">
+              <div class="lwj-space-between">
+                <p><strong>S1 E10</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+                <p class="lwj-text-subdued">3 min</p>
+              </div>
+              <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+                {% icon "play", "lwj-icon-12" %}
+                No ragrets
+              </h3>
+              <p>My whole life philosophy sounds kinda silly when I say it out loud.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="lwj-heading-3 lwj-stack-md">Upcoming episodes</h2>
+        <figure class="lwj-flex" style="--flex-gap: 10px; --flex-align: flex-start; max-width: 380px">
+          <img src="/assets/images/thumbnail2.png" alt="Jason on the couch" width="170">
+          <figcaption class="lwj-flow-xs lwj-text-body-sm">
+            <p><strong>S1 E11</strong> <span class="lwj-text-subdued">Mar 22, 2024</span></p>
+            <h3 class="lwj-flex lwj-heading-4" style="--flex-gap: 4px">
+              {% icon "play", "lwj-icon-12" %}
+              Deliberate practice
+            </h3>
+            <p>The only way to get better at a thing is to keep doing the thing.</p>
+            <p><a href="">Add a reminder ></a></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h2 class="lwj-heading-3 lwj-stack-md">People in this series</h2>
+        <div class="lwj-grid" style="--grid-col-min: 110px">
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/jason.jpg" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Jason">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Jason Lengstorf
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/sarah.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Sarah">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Sarah Drasner
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/angie.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Angie">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Angie Jones
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/rich.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Rich">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Rich Harris
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/brandon.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Brandon">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Brandon Roberts
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/una.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Una">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Una Kravets
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit">
+            <figure>
+              <img src="/assets/images/fred.png" class="lwj-avatar lwj-margin-auto lwj-stack-xs" alt="Fred">
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                Fred K. Schott
+              </figcaption>
+            </figure>
+          </a>
+          <a href="" class="lwj-text-inherit" style="align-self: end">
+            <figure>
+              <div class="lwj-inset-square-lg">
+                {% icon "arrow-right", "lwj-icon-32 lwj-margin-auto lwj-stack-xs lwj-text-interactive" %}
+              </div>
+              <figcaption class="lwj-text-body-sm lwj-text-center">
+                see all
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="lwj-heading-3 lwj-stack-md">Series credits</h2>
+
+        <div class="lwj-space-between lwj-text-body-md" style="--flex-align: flex-start">
+          <div>
+            <p class="lwj-text-body-sm lwj-text-subdued">Creator</p>
+            <p class="lwj-stack-md">Jason Lengstorf</p>
+  
+            <p class="lwj-text-body-sm lwj-text-subdued">Editor</p>
+            <p>Jason Lengstorf</p>
+          </div>
+  
+          <div>
+            <p class="lwj-text-body-sm lwj-text-subdued">Presenting Partners</p>
+            <p>Sentry<br>
+            Raycast</p>
+          </div>
+
+          <div>
+            <p class="lwj-text-body-sm lwj-text-subdued">Presenting Partners</p>
+            <p class="lwj-columns" style="--columns: 3">Natalie Davis<br>
+            Vaibhav Tandon<br>
+            Brandon Roberts<br>
+            Erin Mikail Staples<br>
+            Nick Taylor<br>
+            Art Rosnovsky<br>
+            Roger Stringer<br>
+            Adam<br>
+            Tiago Couto<br>
+            Darshak Parikh<br>
+            Craig Richardson<br>
+            Bryan Robinson<br>
+            Michael Nichols<br>
+            Patrick Whitty-Clarke<br>
+            Samuel Alvarez<br>
+            Peter Carlsson<br>
+            patrick.py<br>
+            Yannick<br>
+            It's Charlie.<br>
+            Acthy<br>
+            Vinny (MRVDOG)<br>
+            michaeljolley<br>
+            Gil Creque
+          </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

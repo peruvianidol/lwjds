@@ -1,0 +1,66 @@
+@use '../abstracts/tokens' as *;
+
+[class*="lwj-stack"] {
+  --stack-size: 10px;
+  margin-block-end: var(--stack-size);
+}
+
+.lwj-stack-xs {
+  --stack-size: #{$spacing-xs};
+}
+.lwj-stack-sm {
+  --stack-size: #{$spacing-sm};
+}
+.lwj-stack-md {
+  --stack-size: #{$spacing-md};
+}
+.lwj-stack-lg {
+  --stack-size: #{$spacing-lg};
+}
+.lwj-stack-xl {
+  --stack-size: #{$spacing-xl};
+}
+
+:where([class*="lwj-flow"]) {
+  --flow-size: 10px;
+  > :where(:not(:last-child)) {
+    margin-block-end: var(--flow-size);
+  }
+}
+
+.lwj-flow-xs {
+  --flow-size: #{$spacing-xs};
+}
+.lwj-flow-sm {
+  --flow-size: #{$spacing-sm};
+}
+.lwj-flow-md {
+  --flow-size: #{$spacing-md};
+}
+.lwj-flow-lg {
+  --flow-size: #{$spacing-lg};
+}
+.lwj-flow-xl {
+  --flow-size: #{$spacing-xl};
+}
+
+[class*="lwj-inset-square"] {
+  --inset-size: 1rem;
+  padding: var(--inset-size);
+}
+
+.lwj-inset-square-xs {
+  --inset-size: #{$spacing-xs};
+}
+.lwj-inset-square-sm {
+  --inset-size: #{$spacing-sm};
+}
+.lwj-inset-square-md {
+  --inset-size: #{$spacing-md};
+}
+.lwj-inset-square-lg {
+  --inset-size: #{$spacing-lg};
+}
+.lwj-inset-square-xl {
+  --inset-size: #{$spacing-xl};
+}

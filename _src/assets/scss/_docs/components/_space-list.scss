@@ -1,0 +1,29 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-space-list {
+  font-size: .875rem;
+  text-align: center;
+  > :before {
+    content: "";
+    display: block;
+    aspect-ratio: 1;
+    background-color: $blue;
+    margin-inline: auto;
+    margin-block-end: $spacing-xs;
+  }
+  [data-size="xs"]:before {
+    width: $spacing-xs;
+  }
+  [data-size="sm"]:before {
+    width: $spacing-sm;
+  }
+  [data-size="md"]:before {
+    width: $spacing-md;
+  }
+  [data-size="lg"]:before {
+    width: $spacing-lg;
+  }
+  [data-size="xl"]:before {
+    width: $spacing-xl;
+  }
+}

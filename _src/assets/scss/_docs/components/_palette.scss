@@ -1,0 +1,22 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-palette {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: $spacing-sm;
+  align-items: start;
+  div:first-of-type {
+    border-radius: $radius-sm;
+    border: 1px solid $black;
+    aspect-ratio: 1;
+  }
+  figcaption {
+    font-size: .875rem;
+  }
+  strong {
+    font-size: 1rem;
+  }
+  span {
+    color: #78757f;
+  }
+}

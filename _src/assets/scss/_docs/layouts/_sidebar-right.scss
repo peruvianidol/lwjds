@@ -1,0 +1,35 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-layout-primary > [data-grid-area="main"] {
+  container-type: inline-size;
+  container-name: article;
+}
+
+.doc-layout-sidebar-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "toc"
+    "content";
+  > [data-grid-area="title"] {
+    grid-area: title;
+  }
+  > [data-grid-area="toc"] {
+    grid-area: toc;
+  }
+  > [data-grid-area="content"] {
+    grid-area: content;
+  }
+}
+
+@container article (width >= 768px) {
+  .doc-layout-sidebar-right {
+    grid-template-columns: minmax(0, 600px) 168px;
+    grid-template-rows: auto 1fr;
+    gap: 0 2rem;
+    grid-template-areas:
+      "title title"
+      "content toc";
+  }
+}

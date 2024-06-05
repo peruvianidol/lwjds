@@ -1,0 +1,8 @@
+@use '../../abstracts/tokens' as *;
+
+:where(.doc-example) {
+  padding: 1rem;
+  background-color: var(--color-background-accent, #{$color-background-accent});
+  border: 1px solid var(--color-border, #{$color-border});
+  border-radius: var(--radius-sm, #{$radius-sm});
+}

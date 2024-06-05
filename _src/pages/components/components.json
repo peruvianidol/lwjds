@@ -1,0 +1,4 @@
+{
+  "layout": "page.njk",
+  "permalink": "/components/{{ page.fileSlug }}/"
+}

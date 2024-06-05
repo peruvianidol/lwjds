@@ -1,0 +1,61 @@
+@use '../../abstracts/tokens' as *;
+
+:where(*) {
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+}
+
+:where(html, body) {
+  height: 100%;
+}
+
+:where(body) {
+  color: var(--color-text-body, #{$color-text-body});
+  background-color: var(--color-background-body, #{$color-background-body});
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(img) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(h1, h2, h3, h4, strong) {
+  font-weight: 500;
+}
+
+:where(a) {
+  color: var(--color-text-interactive, #{$color-text-interactive});
+  font-weight: 500;
+  display: inline-block;
+}
+
+:where(em) {
+  font-style: italic;
+}
+
+:where(ul, ol):not([role="list"]) {
+  padding-inline-start: 1rem;
+}
+
+:where([role="list"]) {
+  padding: 0;
+  list-style: none;
+}
+
+code:not([class]) {
+  background-color: var(--color-background-brand, #{$color-background-brand});
+  color: var(--color-text-inverse, #{$color-text-inverse});
+  padding: 2px 4px;
+  border-radius: var(--radius-sm, #{$radius-sm});
+  font-size: .875em;
+  font-family: monospace;
+}
+
+:where(summary) {
+  cursor: pointer;
+}

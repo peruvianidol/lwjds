@@ -1,0 +1,16 @@
+@use '../abstracts/tokens' as *;
+
+[class*="lwj-button"] {
+  padding: .625rem 1rem;
+  border-radius: var(--button-radius, #{$radius-sm});
+  border: 1px solid transparent;
+  font-size: $font-size-2;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.lwj-button-primary {
+  background-color: $color-background-interactive;
+}

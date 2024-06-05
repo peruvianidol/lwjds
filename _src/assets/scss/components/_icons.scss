@@ -1,0 +1,18 @@
+@use '../abstracts/tokens' as *;
+
+:where([class*="lwj-icon"]) {
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.lwj-icon-12 {
+  width: .75rem;
+}
+
+.lwj-icon-24 {
+  width: 1.5rem;
+}
+
+.lwj-icon-32 {
+  width: 2rem;
+}

@@ -1,0 +1,8 @@
+{% macro sample() %}
+<details data-pagefind-ignore>
+  <summary><span>HTML</span></summary>
+{% highlight "html" %}
+{{ caller() }}
+{% endhighlight %}
+</details>
+{% endmacro %}

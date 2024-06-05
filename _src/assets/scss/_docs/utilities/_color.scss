@@ -1,0 +1,9 @@
+@use '../../abstracts/tokens' as *;
+
+.doc-surface-accent {
+  background-color: var(--color-background-brand-accent, #{$color-background-accent});
+}
+
+.doc-bordered {
+  border: 1px solid var(--color-border, #{$color-border});
+}

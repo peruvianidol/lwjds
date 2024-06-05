@@ -1,0 +1,27 @@
+@use '../abstracts/tokens' as *;
+
+[class*="lwj-nav-bar"] {
+  --flex-justify: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: var(--flex-justify);
+  gap: 10px;
+  border-radius: $radius-round;
+  background-color: $color-background-overlay-dark;
+  border: 1px solid $color-border-overlay;
+  padding: 12px 30px;
+  text-shadow: $shadow-text-overlay;
+  color: $color-text-strong;
+  text-decoration: none;
+  line-height: 1;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.lwj-nav-bar-sm {
+  display: inline-flex;
+  background-color: $color-background-overlay-light;
+  padding: 3px 30px;
+}

@@ -1,0 +1,30 @@
+@use '../abstracts/tokens' as *;
+
+.lwj-surface {
+  background-color: var(--color-background-body, #{$color-background-body});
+}
+
+.lwj-surface-brand {
+  background-color: var(--color-background-brand, #{$color-background-brand});
+}
+
+.lwj-text-subdued {
+  color: var(--color-text-subdued, #{$color-text-subdued});
+}
+
+.lwj-text-inverse {
+  color: var(--color-text-inverse, #{$color-text-inverse});
+}
+
+.lwj-text-interactive {
+  color: var(--color-text-interactive, #{$color-text-interactive});
+}
+
+.lwj-text-subdued-inverse {
+  color: var(--color-text-subdued-inverse, #{$color-text-subdued-inverse});
+}
+
+.lwj-text-inherit {
+  color: inherit;
+  text-decoration: inherit;
+}
