@@ -99,7 +99,7 @@ Containers with different background colors.
 <div class="lwj-surface lwj-inset-square">
   <strong>.lwj-surface</strong>
 </div>
-<div class="doc-bordered lwj-surface-brand lwj-inset-square lwj-text-inverse">
+<div class="lwj-surface-brand lwj-inset-square lwj-text-inverse">
   <strong>.lwj-surface-brand</strong>
 </div>
 {% endcall %}
