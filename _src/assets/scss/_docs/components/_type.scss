@@ -2,8 +2,6 @@
 
 [class*="doc-heading"],
 article :where(h1, h2, h3, h4) {
-  font-weight: 500;
-  line-height: 1.2;
   color: var(--color-text-strong, #{$color-text-strong});
   a {
     color: inherit;
@@ -17,21 +15,30 @@ article :where(h1, h2, h3, h4) {
 
 .doc-heading-1,
 article h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  letter-spacing: calc(#{$font-size-1} * -.03);
+  font-weight: $font-weight-bold;
 }
 
 .doc-heading-2,
 article h2 {
-  font-size: 2rem;
+  font-size: $font-size-2;
+  line-height: $line-height-2;
+  letter-spacing: calc(#{$font-size-2} * -.01);
+  font-weight: $font-weight-medium;
 }
 
 .doc-heading-3,
 article h3 {
-  font-size: 1.5rem;
+  font-size: $font-size-3;
+  line-height: $line-height-3;
 }
 
 .doc-heading-4,
 article h4 {
-  font-size: 1.25rem;
+  font-size: $font-size-4;
+  line-height: $line-height-4;
+  letter-spacing: calc(#{$font-size-4} * -.01);
+  font-weight: $font-weight-medium;
 }
