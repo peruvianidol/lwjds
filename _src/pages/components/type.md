@@ -162,3 +162,15 @@ Text divided into columns.
     Gil Creque
   </p>
 </div>
+
+{% call code.sample() %}
+<p class="lwj-columns" style="--columns: 3; --gap: 30px">
+  Natalie Davis<br>
+  Vaibhav Tandon<br>
+  Brandon Roberts<br>
+  ...
+  Vinny (MRVDOG)<br>
+  michaeljolley<br>
+  Gil Creque
+</p>
+{% endcall %}

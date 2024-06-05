@@ -90,10 +90,16 @@ Containers with different background colors.
   <div class="doc-bordered lwj-surface lwj-inset-square">
     <strong>.lwj-surface</strong>
   </div>
+  <div class="doc-bordered lwj-surface-brand lwj-inset-square lwj-text-inverse">
+    <strong>.lwj-surface-brand</strong>
+  </div>
 </div>
 
 {% call code.sample() %}
 <div class="lwj-surface lwj-inset-square">
   <strong>.lwj-surface</strong>
+</div>
+<div class="doc-bordered lwj-surface-brand lwj-inset-square lwj-text-inverse">
+  <strong>.lwj-surface-brand</strong>
 </div>
 {% endcall %}
