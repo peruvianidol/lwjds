@@ -1,6 +1,7 @@
 @use '../abstracts/tokens' as *;
 
 .lwj-layout-series {
+  height: 100%;
   display: grid;
   grid-template-columns: 64px 1fr 64px;
   grid-template-rows: 32px auto auto 1fr;
